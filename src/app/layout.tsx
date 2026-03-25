@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import "@vic-rep/design-system/tokens.css";
 import "./globals.css";
-import { ThemeProvider } from "@vic-rep/design-system/theme";
+import { Providers } from "./providers";
 
 export const metadata: Metadata = {
   title: "Trusti — Реферална програма",
@@ -23,7 +23,7 @@ export default function RootLayout({
         />
       </head>
       <body>
-        <ThemeProvider>{children}</ThemeProvider>
+        <Providers>{children}</Providers>
       </body>
     </html>
   );
